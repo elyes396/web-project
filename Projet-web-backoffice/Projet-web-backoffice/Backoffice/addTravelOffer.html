@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <title>Add Travel Offer - Dashboard</title>
+    <link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Nunito:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i" rel="stylesheet">
+    <link href="css/sb-admin-2.min.css" rel="stylesheet">
+    <style>
+        .error-message, .error, .success {
+            max-width: 250px;
+            font-size: 0.85rem;
+            margin-top: 5px;
+            padding: 2px 5px;
+            display: block;
+        }
+        .error-message, .error {
+            color: red;
+        }
+        .success {
+            color: green;
+        }
+        .form-group {
+            margin-bottom: 10px;
+        }
+        .form-group label {
+            display: block;
+            margin-bottom: 5px;
+        }
+    </style>
+</head>
+<body id="page-top">
+    <div id="wrapper">
+        <ul class="navbar-nav bg-gradient-primary sidebar sidebar-dark accordion" id="accordionSidebar">
+            <a class="sidebar-brand d-flex align-items-center justify-content-center" href="index.html">
+                <div class="sidebar-brand-text mx-3">Travel Booking</div>
+            </a>
+            <hr class="sidebar-divider my-0">
+            <li class="nav-item active">
+                <a class="nav-link" href="#">
+                    <i class="fas fa-fw fa-tachometer-alt"></i>
+                    <span>Dashboard</span>
+                </a>
+            </li>
+        </ul>
+        <div id="content-wrapper" class="d-flex flex-column">
+            <div id="content">
+                <nav class="navbar navbar-expand navbar-light bg-white topbar mb-4 static-top shadow">
+                    <button id="sidebarToggleTop" class="btn btn-link d-md-none rounded-circle mr-3">
+                        <i class="fa fa-bars"></i>
+                    </button>
+                </nav>
+                <div class="container-fluid">
+                    <div class="d-sm-flex align-items-center justify-content-between mb-4">
+                        <h1 class="h3 mb-0 text-gray-800">Add a Travel Offer</h1>
+                    </div>
+                    <div class="row">
+                        <div class="col-xl-8 col-md-6 mb-4">
+                            <div class="card border-left-primary shadow h-100 py-2">
+                                <div class="card-body">
+                                    <div class="row no-gutters align-items-center">
+                                        <form id="addOfferForm">
+                                            <div class="form-group">
+                                                <label for="titre">Title:</label>
+                                                <input type="text" id="titre" name="titre" class="form-control">
+                                            </div>
+                                            <div class="form-group">
+                                                <label for="destination">Destination:</label>   
+                                                <input type="text" id="destination" name="destination" class="form-control">
+                                            </div>
+                                            <div class="form-group">
+                                                <label for="dateDepart">Departure Date:</label>
+                                                <input type="date" id="dateDepart" name="dateDepart" class="form-control">
+                                            </div>
+                                            <div class="form-group">
+                                                <label for="dateRetour">Return Date:</label>
+                                                <input type="date" id="dateRetour" name="dateRetour" class="form-control">
+                                            </div>
+                                            <div class="form-group">
+                                                <label for="prix">Price:</label>
+                                                <input type="number" id="prix" name="prix" class="form-control">
+                                            </div>
+                                            <div class="form-group">
+                                                <label for="category">Category:</label>
+                                                <select id="category" name="category" class="form-control">
+                                                    <option value="adventure">Adventure</option>
+                                                    <option value="relaxation">Relaxation</option>
+                                                    <option value="cultural">Cultural</option>
+                                                </select>
+                                            </div>
+                                            <button id="addOfferButton" type="submit" class="btn btn-primary">Add Offer</button>
+                                        </form>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <footer class="sticky-footer bg-white">
+                <div class="container my-auto">
+                    <div class="copyright text-center my-auto">
+                        <span>Copyright &copy; Travel Booking 2024</span>
+                    </div>
+                </div>
+            </footer>
+        </div>
+    </div>
+    <a class="scroll-to-top rounded" href="#page-top">
+        <i class="fas fa-angle-up"></i>
+    </a>
+    <script src="vendor/jquery/jquery.min.js"></script>
+    <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
+    <script src="js/sb-admin-2.min.js"></script>
+    <script src="addOffer.js"></script>
+</body>
+</html>
